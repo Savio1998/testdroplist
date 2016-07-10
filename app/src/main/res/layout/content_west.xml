@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/themadd"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:spinnerMode="dropdown" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:id="@+id/llto"
+        android:layout_below="@+id/themadd"
+        android:layout_alignParentStart="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="- Slotermeer"
+            android:id="@+id/textView1"
+            android:layout_marginTop="21dp"
+            android:textSize="18dp"
+            android:layout_below="@+id/themadd"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="- Slotervaart"
+            android:id="@+id/textView2"
+            android:textSize="18dp"
+            android:layout_below="@+id/textView1"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="- Osdorp"
+            android:id="@+id/textView3"
+            android:textSize="18dp"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="- Geuzenveld"
+            android:id="@+id/textView4"
+            android:textSize="18dp"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="- Moodboard"
+            android:id="@+id/textView30"
+            android:textSize="18dp"
+            android:layout_below="@+id/themadd"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="- Studiekeuze test"
+            android:id="@+id/textView31"
+            android:textSize="18dp"
+            android:layout_below="@+id/themadd"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="- Documentaires kijken"
+            android:id="@+id/textView32"
+            android:textSize="18dp"
+            android:layout_below="@+id/themadd"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="- LAB111 Film &amp; Eten"
+            android:id="@+id/textView8"
+            android:textSize="18dp"
+            android:layout_below="@+id/themadd"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="- Beroepsproffesional zoeken"
+            android:id="@+id/textView9"
+            android:textSize="18dp"
+            android:layout_below="@+id/textView8"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="- Meeloopdagen op school"
+            android:id="@+id/textView10"
+            android:textSize="18dp"
+            android:layout_below="@+id/textView9"
+            android:layout_alignParentStart="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/themadd"
+        android:layout_toEndOf="@+id/llgl"
+        android:id="@+id/llvr"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="- (Kerst)diner organiseren"
+            android:id="@+id/vr1"
+            android:layout_marginTop="21dp"
+            android:textSize="16dp"
+            android:layout_below="@+id/themadd"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="- Buurthuis bezoeken"
+            android:id="@+id/vr2"
+            android:textSize="16dp"
+            android:layout_below="@+id/vr1"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="- Pannenkoeken bakken"
+            android:id="@+id/vr3"
+            android:textSize="16dp"
+            android:layout_below="@+id/vr2"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="- Koken"
+            android:id="@+id/vr4"
+            android:textSize="16dp"
+            android:layout_below="@+id/vr3"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="- Park nieuw-west"
+            android:id="@+id/vr5"
+            android:textSize="16dp"
+            android:layout_below="@+id/vr4"
+            android:layout_alignParentStart="true" />
+
+    </LinearLayout>
+
+</LinearLayout>

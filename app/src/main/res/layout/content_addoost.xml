@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/themadd"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:spinnerMode="dropdown" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:visibility="visible"
+        android:id="@+id/glll">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listViewgl"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/field_attractie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/themadd"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="55dp"
+            android:hint="Naam van gebouw/instelling"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:scrollHorizontally="false" />
+
+        <EditText
+            android:id="@+id/field_categorie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/field_attractie"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:hint="Bibliotheek, Zwembad, cafe, etc."
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:scrollHorizontally="false" />
+
+        <EditText
+            android:id="@+id/field_adres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/field_categorie"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:hint="Oosterpark 34"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/field_postcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/field_adres"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:hint="1089 AS"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/field_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/field_postcode"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:hint="036-3456789"
+            android:maxLines="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voeg toe"
+            android:id="@+id/buttongl"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/themadd"
+            android:layout_marginBottom="53dp"
+            android:onClick="populateGLList" />
+
+    </LinearLayout>
+
+</LinearLayout>
